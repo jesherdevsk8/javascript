@@ -1,0 +1,17 @@
+<div class="google-group col-12 col-sm-12 col-md-6">
+  <%= form.text_field :cidade_nascimento, onkeyup: "onlyLetters(this)", required: true %>
+  <%= form.label :cidade_nascimento %>
+  <span class="bar"></span>
+</div>
+
+<script>
+  
+  function onlyLetters(e) {
+    var letras = /^[a-zÀ-ú|\s|]*$/i;
+    if (!e.value.match(letras)) {
+        alert('\uE002 CAMPO INVÁLIDO.\uE002 \nPor favor coloque o nome da Cidade de Nascimento.');
+        e.value = "";
+    }
+  }
+
+</script>

@@ -1,0 +1,12 @@
+var numero = 5
+typeof numero
+> 'number'
+var nome = 'Tux'
+typeof nome
+> 'string'
+var array = [1, 'fera', 10, 'tux']
+typeof array
+> 'object'
+var hash = {nome: 'jesher'}
+typeof hash
+> 'object'

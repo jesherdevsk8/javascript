@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function allLetter(e) {
+    var letters = /^[a-zÀ-ú|\s|]*$/i;
+    if (!e.value.match(letters)) {
+        alert('Campo Inválido. Por favor coloque o nome da sua cidade de nascimento.');
+        e.value = ""
+    }
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form action="#" id="form1" name="form1" method="post">
+  <input name="Forename" type="text" required="required" id="Forename2" onkeyup="allLetter(this)" />
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
