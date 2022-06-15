@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+        body {
+            background-color: #3d3dad;
+        }
+
+        .main {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            padding: 15px;
+            background-color: azure;
+            border-radius: 15px;
+            width: 400px;
+            height: 100px;
+            box-shadow: 4px 4px 10px;
+        }
+        .main h1 {
+            text-align: center;
+            font-family: monospace;
+            font-size: 20px;
+            color: #3d3dad;
+            text-shadow: 1px 1px #000000;
+        }
+
+        .botao {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: azure;
+            font-weight: bold;
+            font-family: monospace;
+            background-color: #000;
+            border-radius: 5px;
+            box-shadow: 2px  1px 2px #3d3dad;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Entendendo Funções nomeadas e anônimas</h1>
+        <button class="botao"> Função Anônima </button>
+    </div>
+
+    <script>
+        const botao = document.querySelector('.botao')
+        // botao.addEventListener("click", clicar); //função nomeada, pode ser declarada mais de uma vez
+        botao.addEventListener("click", () => { // => arrow function o mesmo que function()
+            console.log('Cliquei na função anônima');
+        }) // função anonima, Não pode ser declarada mais de uma vez
+        function clicar(nome) {
+            console.log(`Olá ${nome}`);
+            console.log("Bem vindo!!");
+        }
+        clicar('Jesher');
+    </script>
+</body>
+</html>
+
